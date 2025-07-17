@@ -32,6 +32,14 @@ header {
   
 }
 
+header {
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  color: #7e7070;
+
+}
+
+
 .left-icons img {
   width: 15px;
   height: 15px;
@@ -41,6 +49,7 @@ header {
 .left-icons {
   display: flex;
   align-items: center;
+ 
 }
 
 .right-info {
@@ -52,6 +61,7 @@ header {
 .right-info div {
   display: flex;
   align-items: center;
+
   gap: 8px;
 }
 
@@ -507,7 +517,14 @@ header {
   background-color: white;
   text-align: center;
   padding: 60px 20px;
-  margin-left: 150px;
+  
+}
+.departments .container{
+  max-width: 1700px;
+  margin:0 auto ;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -529,9 +546,10 @@ header {
 
 .card {
   display: flex;
-  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
+
   
   
 }
@@ -539,11 +557,11 @@ header {
 .card1 {
   flex: 1 1 calc(33.333% - 40px);
   max-width: 320px;
-  margin: 70px;
+  
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 6px 2px;
   transition: transform 0.3s ease;
 }
 
