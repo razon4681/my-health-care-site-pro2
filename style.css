@@ -229,7 +229,7 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.12s ease;
 }
 
 .slider button:hover {
@@ -239,16 +239,16 @@ header {
 /* Animation */
 @keyframes slide {
   0%, 100% {
-    background-image: url('rk1.webp');
+    background-image: url('./imgs/rk1.webp');
   }
   33% {
-    background-image: url('b3.jpg');
+    background-image: url('./imgs/b3.jpg');
   }
   66% {
-    background-image: url('b4.JPG');
+    background-image: url('./imgs/b4.JPG');
   }
   90% {
-    background-image: url('b2.jpg');
+    background-image: url('./imgs/b2.jpg');
   }
 }
 
@@ -638,7 +638,7 @@ header {
 .he {
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('c1.webp'); /* Replace with your image */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./imgs/c1.webp'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -920,11 +920,11 @@ header {
 
 /* Backgrounds */
 #ja {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('j1.webp');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./imgs/j1.webp');
 }
 
 #je {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('j2.webp');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./imgs/j2.webp');
 }
 
 /* Text styling */
@@ -949,9 +949,10 @@ header {
   color: #fff;
   padding: 50px 20px;
   font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-
 
 .footer-section {
   flex: 1 1 220px;
@@ -991,9 +992,30 @@ header {
   font-size: 15px;
   line-height: 1.6;
 }
-.foo{
+
+.foo {
   text-align: center;
-   background-color: #494949;
-   color: #fff;
-   margin-top: -30px;
+  background-color: #494949;
+  color: #fff;
+  margin-top: -30px;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    margin: 0 auto 10px auto;
+  }
 }
